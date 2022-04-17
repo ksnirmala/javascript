@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+<title>Javascript demo</title>
+<script>
+function verify(){
+var num1,num2,num3;
+num1=Number(document.getElementById("num1").value);
+num2=Number(document.getElementById("num2").value);
+num3=num1+num2;
+//alert("the addition of two number is:"+num3);
+document.getElementById("ans").innerHTML="The sum of "+num1+" and "+num2+ " is :" +num3;
+}
+</script>
+</head>
+<body>
+<form>
+Enter first number:<input type="number" id="num1"/><br>
+Enter second  number:<input type="number" id="num2"/><br>
+<input type="button"  value="submit" onclick="verify()"/><br>
+<p id="ans"></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+<title>Javascript demo</title>
+<script>
+function factorial(){
+var fact=1,num,i;
+num=Number(document.getElementById("num").value);
+for(let i=num;i>=1;i--){
+fact=fact*i;
+}
+//alert("the addition of two number is:"+num3);
+document.getElementById("ans").innerHTML="The factorial of a "+num+" number is :" fact;
+}
+</script>
+</head>
+<body>
+<form>
+Enter the number:<input type="number" id="num"/><br>
+<input type="button"  value="submit" onclick="factorial()"/><br>
+<p id="ans"></p>
+</form>
+</body>
+</html>
