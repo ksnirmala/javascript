@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Regular Expressions</h2>
+
+<p>A global search for word characters:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "give the list"; 
+let pattern = /\v/g;
+let result = text.match(pattern);
+
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>

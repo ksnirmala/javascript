@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Regular Expressions</h2>
+
+<p>A global search for at least one "o" in a string:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "is this all is my there are"; 
+let pattern = /is(?! all)/g;
+let result = text.match(pattern);
+
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>

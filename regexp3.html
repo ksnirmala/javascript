@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Regular Expressions</h2>
+
+<p>A global search for the numbers 1 to 4:</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+let text = "123456789";
+let pattern = /[1-4]/g;
+let pattern1 =/[^1-4]/g;
+let result = text.match(pattern);
+let result1 = text.match(pattern1);
+
+document.getElementById("demo").innerHTML = result;
+document.getElementById("demo1").innerHTML = result1;
+</script>
+
+</body>
+</html>

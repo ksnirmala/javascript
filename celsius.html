@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>fahrenheit to celsius</title>
+     <style>
+          #contain{
+               display:block;
+               align-items: center;
+               margin-top: 200px;
+          }
+     </style>
+</head>
+<body>
+     <div id="contain">
+          <input type="text" id="num1" placeholder = "enter text"/><br>
+          <!-- <input type ="radio" id="tofahren"/>celsius to fahrenheit<br>
+          <input type="radio" id="tocelsius"/>fahrenheit to celsius
+          <br/> -->
+          <button onclick="getfahren()">find celsius</button>
+          <h4 id="optcelsius"></h4>
+          <!-- <hr/>          
+          <button onclick="getcelsius()">find fahrenheit</button>
+          <h4 id="optfahrenheit"></h4> -->
+     </div>
+</body>
+<script>
+     //(°F − 32) × 5/9 = °C
+    function getfahren(){
+     var f = Number(window.prompt(document.getElementById("tofahren").value));
+     var c = Number(window.prompt(document.getElementById("tocelsius").value));
+     var text = document.getElementById("num1").value;
+
+     if(c==text){
+          var fahrenheit = Number(window.prompt(document.getElementById("num1").value));
+          var celsius = (fahrenheit-32)*5/9;
+          document.getElementById("optcelsius").innerHTML=`${celsius} is celsius`;
+     }
+     if(f==text){
+          
+          var cel = Number(window.prompt(document.getElementById("num2").value));
+          var fahren = (cel*9/5)+32;
+          document.getElementById("optfahrenheit").innerHTML=`${fahren} is fahrenheit`;
+     }
+     }
+</script>
+</html>
+
+
+
+

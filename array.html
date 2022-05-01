@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>js</title>
+</head>
+<body>
+     <script>
+          var fruit = ['apple','orange','grapes','pomgranate'];
+          document.write("fruit names"+"<br>");
+          var ans;
+          fruit.push('pineapple');
+          fruit.unshift('mango');
+          for (var i =0; i<fruit.length;i++){
+               ans = document.write(fruit[i]+"<br/>");
+              }
+              document.write("<hr>");
+            document.write("after splicing :"+"<br>");
+            fruit.splice(2,0, 'tendercoco','choco'); 
+            //in splice 1st argument is index position and 2nd argument numb of elements 
+            //have to remove
+
+              for (var i =0; i<fruit.length;i++){
+               ans = document.write(fruit[i]+"<br/>");
+              }
+          //    var c = document.createElement(h1);
+          //     h1.id="viewcont";
+          //     document.getElementById("viewcont").style=`color:darkblue,
+          //     text-decoration:underline,
+          //     font-weight:bold,`;
+          //     document.getElementById("viewcont").value=ans;
+              document.write("<hr>");
+              document.write("after deleting the item"+"<br>");
+              fruit.pop();
+              fruit.shift();
+              for (var i =0; i<fruit.length;i++){
+               ans = document.write(fruit[i]+"<br/>");
+              }
+              
+              document.write("<hr>");
+              var cars = ['audi','BMW','rolls-royce','jaguar']; 
+              //document.write(cars.join("- -"));
+              document.write(cars.slice(1,-1));
+              document.write("<hr>")
+              var ct = fruit.concat(cars);
+              document.write(ct);
+     </script>
+</body>
+</html>
